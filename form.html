@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <fieldset>
+  <legend>필수 정보 </legend>
+  <label for="date">작성 시기 :</label><br>
+  <input type="date" value="2023-09-27"><br>
+  <label for="fname">학번:</label><br>
+  <input type="text" id="s_id" name="id" value="22200671"><br>
+  <label for="fname">이름:</label><br>
+  <input type="text" id="name" name="name" value="정승희"><br>
+  
+  <label for="gender">성별:</label>
+  <input type="radio" name="gender">남<input type="radio" name="gender">여<br>
+  <lavel for="semester"> 현재 학기 수: 
+  <select name="semester" form="myform">
+  <option value="1">1학기</option><br>
+  <option value="2">2학기</option><br>
+  <option value="3">3학기</option><br>
+  <option value="4">4학기</option><br>
+  <option value="5">5학기</option><br>
+  <option value="6">6학기</option><br>
+  <option value="7">7학기</option><br>
+  <option value="8">8학기</option><br>
+  </select><br>
+  
+  <label for="subject"> 현재 수강중인 과목:</label><br>
+  <input type="checkbox">Calculs2 <input type="checkbox">통계학 <input type="checkbox">물리학개론 <input type="checkbox">앱 프로그래밍 <input type="checkbox">기독교의 이해 <input type="checkbox">심리학개론<br>
+  <label for="wts"> 하고 싶은 말:</label><br> 
+  <textarea name="wanttosay" cols=90 rows=2 placeholder="10글자 이상 작성하세요."></textarea>
+   </fieldset>
+   
+   <fieldset>
+  <legend>선택 정보</legend>
+  <label for="major">학부: </label> 
+  <input type="text" value="전산전자공학부" list="majorlist"><br>
+  <label for="f_id">함께 스터디 하고 싶은 인원 수: </label>
+  <select name="number of member">
+  	<optgroup label="number of member">
+  		<option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+  </select><br>
+  <label for="s_color">스터디 그룹 채팅방 색깔: </label>
+  <input type="color">
+  </fieldset>
+  <datalist id="majorlist">
+  	<option value="전산전자공학부"></option>
+    <option value="경영경제학부"></option>
+    <option value="법학부"></option>
+    <option value="상담심리학부"></option>
+  </datalist>
+</body>
+</html>
+
